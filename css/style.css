@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 115%;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Skip to Main Content link - accessible and high contrast */
+.skip-link {
+    display: inline-block;
+    background-color: #00274c;
+    color: #ffcb05;
+    padding: 10px 16px;
+    margin: 8px;
+    font-weight: bold;
+    text-decoration: underline;
+    border: 2px solid #00274c;
+    border-radius: 4px;
+}
+
+.skip-link:hover,
+.skip-link:focus {
+    background-color: #ffcb05;
+    color: #00274c;
+    outline: 3px solid #00274c;
+}
+
+header {
+    background-color: #00274c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Requirement 4: Change nav element to use inline-block and width of about 80% */
+nav {
+    display: inline-block;
+    width: 80%;
+    background-color: #f4f6f8;
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid #ffcb05;
+}
+
+/* Requirement 5: Use descendant selector to style only the image in the nav to have width of about 10% */
+nav img {
+    width: 10%;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Requirement 3: Comment out the existing styling for the li element */
+/*
+li {
+    display: inline-block;
+    width: 100px;
+}
+*/
+
+nav a {
+    color: #00274c;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 6px 12px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #00274c;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+main {
+    background-color: #fdfdfd;
+    font-size: 100%;
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #00274c;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #ffcb05;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffcb05;
+    margin-top: 15px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Requirement 6 & 8: Style the grid class to use a two-column grid (~40% each) with justify-content, align-items, and row-gap */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+    margin-top: 20px;
+}
+
+/* Requirement 7: Use descendant selector to style only images in the grid class to have 100% width */
+.grid img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #00274c;
+    border-radius: 6px;
+}
+
+/* Requirement 9: Style the flex class to use flex with flex-wrap and justify-content */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+    margin-top: 20px;
+}
+
+.flex img {
+    width: 280px;
+    height: auto;
+    border: 3px solid #00274c;
+    border-radius: 6px;
+}
